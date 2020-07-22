@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A133A96D-9684-4DB9-AE2E-DE8E50DFD966}</ProjectGuid>
+    <ProjectGuid>{F24B145C-85DD-466D-8E39-BB591D241F14}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>MainCorreo</RootNamespace>
     <AssemblyName>MainCorreo</AssemblyName>
@@ -46,16 +46,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmPpal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmPpal.Designer.cs">
+      <DependentUpon>FrmPpal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPpal.resx">
+      <DependentUpon>FrmPpal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,7 +81,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
-      <Project>{adcd0607-6288-4f0c-a921-b129a9dada93}</Project>
+      <Project>{33adb6e6-5345-443f-8405-4f2c4a1ffb5a}</Project>
       <Name>Entidades</Name>
     </ProjectReference>
   </ItemGroup>
