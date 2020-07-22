@@ -22,13 +22,21 @@ namespace Entidades
         /// <summary>
         /// Inserta los datos del paquete en la base de datos.
         /// </summary>
-        /// <param name="p">Paquete a guardar.</param>
+        /// <param name="p"></param>
         /// <returns>True si se pudo guardar. False si no se pudo.</returns>
         public static bool Insertar(Paquete p)
         {
+            /*string comando = string.Format("INSERT INTO Paquetes (direccionEntrega,trackingID,alumno)" +
+                " VALUES ('{0}','{1}','Sbaglia Julian')", p.DireccionEntrega, p.TrackingID);
+            PaqueteDAO.comando.CommandText = comando;
+            PaqueteDAO.conexion.Open();
+            PaqueteDAO.comando.ExecuteNonQuery();
+            PaqueteDAO.conexion.Close();
+            return true;*/
+
             bool retorno = false;
             StringBuilder sb = new StringBuilder();
-
+            
             try
             {
                 conexion.Open();

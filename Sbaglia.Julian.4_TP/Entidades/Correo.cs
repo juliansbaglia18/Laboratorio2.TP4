@@ -42,7 +42,7 @@ namespace Entidades
         }
 
         /// <summary>
-        /// Cierra los hilos donde se ejecutan los paquetes.
+        /// Cierra los hilos donde se ejecutan los paquetes
         /// </summary>
         public void FinEntrega()
         {

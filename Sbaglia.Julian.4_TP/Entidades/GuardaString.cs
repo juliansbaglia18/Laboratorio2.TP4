@@ -18,9 +18,17 @@ namespace Entidades
         /// <returns>True si fue posible. False si no lo fue.</returns>
         public static bool Guardar(this string texto, string archivo)
         {
+            /*StreamWriter streamWriter = new StreamWriter(Environment.GetFolderPath
+                (Environment.SpecialFolder.Desktop) + @"\" + archivo + ".txt", true);
+            using (streamWriter)
+            {
+                streamWriter.Write(string.Format("[{0}]\n{1}\n", DateTime.Now.ToString(), texto));
+
+                return true;
+            }*/
             bool retorno;
             StringBuilder path = new StringBuilder();
-
+            
             path.Append(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             path.Append("\\");
             path.Append(archivo);
